@@ -1,3 +1,4 @@
 *.jpg
 grayscale.txt
 backup
+__pycache__
