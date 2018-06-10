@@ -1,5 +1,6 @@
-*.jpg
-*.txt
+Kara.jpg
+Kara.html
+Kara.txt
+grayscale.txt
 backup
 __pycache__
-*.html

@@ -30,7 +30,7 @@ class AsciiArt():
         with open('{}.txt'.format(filename), 'w') as f:
             f.write(ascii)
     
-    def save_as_html_file(self, scaling_ratio, filename):
+    def save_as_html_file(self, scaling_ratio, filename, font_size, line_height):
         ascii = self.convert_to_ascii(scaling_ratio)
         html = '''<!DOCTYPE HTML>
                 <html>
@@ -42,7 +42,7 @@ class AsciiArt():
                     white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
                     white-space: pre-wrap;      /* Modern browsers */
                     font-family: 'Courier New', 'Monaco', 'Consolas', 'Inconsolata';
-                    line-height: 1.0;
+                    line-height: %.2f;
                     font-size: %dpx;
                     }
                 </style>
@@ -52,6 +52,6 @@ class AsciiArt():
                 </body>
                 </html>
                 '''
-        html = html % (6, ascii)
+        html = html % (line_height, font_size, ascii)
         with open('{}.html'.format(filename), 'w') as f:
             f.write(html)
