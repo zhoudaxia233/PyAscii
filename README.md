@@ -2,7 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/zhoudaxia233/AsciiArt/develop/cover.png" width="256">
 
-- [x] Asciify an image into `txt` & `html`
+- [x] Asciify an image into `txt` & `html` (naive algorithm)
+- [ ] Asciify an image into `txt` & `html` (advanced algorithm)
 - [ ] Asciify many images parallelly
 - [ ] Asciify a GIF
 - [ ] Asciify a video
