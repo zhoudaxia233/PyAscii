@@ -1,5 +1,11 @@
 # AsciiArt
 
+## Some Amazing examples
+[1. A Beautiful Girl drawed by me](http://zhoudaxia.eu/AsciiArt/examples/test1.html)  
+[2. Famous Yaoming's Face](http://zhoudaxia.eu/AsciiArt/examples/yaoming.html)  
+[3. My Avatar](http://zhoudaxia.eu/AsciiArt/examples/avatar.html)
+
+---
 ## To do list
 - [x] Asciify an image into `txt` & `html` (naive algorithm)
 - [ ] Asciify an image into `txt` & `html` (advanced algorithm)
