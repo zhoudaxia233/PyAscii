@@ -1,8 +1,6 @@
 # AsciiArt
 
-<img src="https://raw.githubusercontent.com/zhoudaxia233/AsciiArt/develop/cover.png" width="256">
-
-## Some Other Amazing examples
+## Some Amazing examples
 [1. A Beautiful Girl drawed by me](http://zhoudaxia.eu/AsciiArt/examples/test1.html)  
 [2. Famous Yaoming's Face](http://zhoudaxia.eu/AsciiArt/examples/yaoming.html)  
 [3. My Avatar](http://zhoudaxia.eu/AsciiArt/examples/avatar.html)
