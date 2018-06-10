@@ -39,7 +39,7 @@ The default value is `2`.
 ./main.py avatar.png --output_format 1
 ```
 
-You can use `--line_height` to specify the height of each line of ascii characters in the output file. The default value is `0.70`.
+You can use `--line_height` to specify the height of each line of ascii characters in the output file. The default value is `0.65`.
 ```
 ./main.py avatar.png --line_height 0.65
 ```
