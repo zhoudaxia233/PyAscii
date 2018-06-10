@@ -9,7 +9,7 @@ def init():
     parser.add_argument('--scaling_ratio', type=float, default=0.5)
     parser.add_argument('--output_format', type=int, default=2)
     parser.add_argument('--font_size', type=int, default=5)
-    parser.add_argument('--line_height', type=float, default=0.80)
+    parser.add_argument('--line_height', type=float, default=0.70)
 
     args = parser.parse_args()
     return (args.file, args.scaling_ratio, args.output_format, args.font_size, args.line_height)
