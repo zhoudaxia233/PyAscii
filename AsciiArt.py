@@ -5,7 +5,7 @@ from PIL import Image
 class AsciiArt():
     def __init__(self, img_path):
         self.path = img_path
-        self.gray_scale = r'@%#*+=-:. '    # r' .:-=+*#%@'
+        self.gray_scale = r'@%#*+=-:. '
         self.size = ()
     
     def __select_ascii_char(self, pixel):
