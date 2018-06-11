@@ -41,7 +41,7 @@ class AsciiArt():
                     word-wrap: break-word;      /* IE 5.5-7 */
                     white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
                     white-space: pre-wrap;      /* Modern browsers */
-                    font-family: 'Courier New', 'Monaco', 'Consolas', 'Inconsolata';
+                    font-family: 'Monaco', 'Consolas', monospace;
                     line-height: %.2f;
                     font-size: %dpx;
                     }
