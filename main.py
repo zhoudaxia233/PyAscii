@@ -3,6 +3,7 @@
 from AsciiArt import AsciiArt
 import argparse
 
+
 def init():
     parser = argparse.ArgumentParser()
     parser.add_argument('file')
@@ -13,6 +14,7 @@ def init():
 
     args = parser.parse_args()
     return (args.file, args.scaling_ratio, args.output_format, args.font_size, args.line_height)
+
 
 def main():
     img_path, scaling_ratio, output_format, font_size, line_height = init()
