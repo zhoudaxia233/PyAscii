@@ -1,0 +1,4 @@
+certifi==2018.11.29
+numpy==1.16.0
+opencv-python==4.0.0.21
+Pillow==5.4.1

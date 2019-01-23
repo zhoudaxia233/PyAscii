@@ -2,12 +2,13 @@
 # coding: utf-8
 from PIL import Image
 
+
 class AsciiArt():
     def __init__(self, img_path):
         self.path = img_path
         self.gray_scale = r'@%#*+=-:. '
         self.size = ()
-    
+
     def __select_ascii_char(self, pixel):
         unit = 256 / len(self.gray_scale)
         return self.gray_scale[int(pixel/unit)]
@@ -15,7 +16,8 @@ class AsciiArt():
     def convert_to_ascii(self, scaling_ratio):
         img = Image.open(self.path).convert('L')
         width, height = img.size
-        img = img.resize((int(width*scaling_ratio), int(height*scaling_ratio)), Image.LANCZOS)    # Image.NEAREST Image.BILINEAR Image.BICUBIC Image.LANCZOS
+        # Image.NEAREST Image.BILINEAR Image.BICUBIC Image.LANCZOS
+        img = img.resize((int(width*scaling_ratio), int(height*scaling_ratio)), Image.LANCZOS)
         self.size = width_new, height_new = img.size
         ascii = ''
         for row in range(height_new):
@@ -24,12 +26,12 @@ class AsciiArt():
                 ascii += self.__select_ascii_char(pixel)
             ascii += '\n'
         return ascii
-    
+
     def save_as_txt_file(self, scaling_ratio, filename):
         ascii = self.convert_to_ascii(scaling_ratio)
         with open('{}.txt'.format(filename), 'w') as f:
             f.write(ascii)
-    
+
     def save_as_html_file(self, scaling_ratio, filename, font_size, line_height):
         ascii = self.convert_to_ascii(scaling_ratio)
         html = '''<!DOCTYPE HTML>
