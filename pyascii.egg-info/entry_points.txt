@@ -1,0 +1,3 @@
+[console_scripts]
+pyascii = pyascii.main:main
+

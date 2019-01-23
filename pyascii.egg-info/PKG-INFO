@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: pyascii
+Version: 0.0.1
+Summary: A tool for converting images or gifs or videos to ASCII.
+Home-page: https://github.com/zhoudaxia233/PyAscii
+License: MIT
+Description: UNKNOWN
+Keywords: asciiart
+Platform: UNKNOWN
+Requires-Python: >=3.5

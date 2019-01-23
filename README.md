@@ -1,4 +1,4 @@
-# AsciiArt
+# PyAscii
 
 ## Some Amazing examples
 [1. A Beautiful Girl drawed by me](http://zhoudaxia.eu/AsciiArt/examples/test1.html)  
@@ -7,11 +7,11 @@
 
 ---
 ## To do list
-- [x] Asciify an image into `txt` & `html` (naive algorithm)
-- [ ] Asciify an image into `txt` & `html` (advanced algorithm)
+- [x] Asciify an image into `txt` & `html`
 - [ ] Asciify many images parallelly
 - [ ] Asciify a GIF
 - [ ] Asciify a video
+- [ ] Asciify webcam feed
 
 ---
 ## Requirements
@@ -19,14 +19,22 @@
 2. `Pillow-5.1.0` (Only this version has been tested, other versions may also work)
 
 ---
+## Installation
+Install `pyascii`:
+
+```bash
+pip install pyascii
+```
+
+---
 
 ## Usage
 ```
-./main.py avatar.png
+pyascii avatar.png
 ```
 You can use `--scaling_ratio` to specify the scaling ratio of the output with respect to the input image. The default value is `0.5`.  
 ```
-./main.py avatar.png --scaling_ratio 0.1
+pyascii avatar.png --scaling_ratio 0.1
 ```
 
 You can use `--output_format` to specify the format of the output file.  
@@ -36,15 +44,15 @@ You can use `--output_format` to specify the format of the output file.
 
 The default value is `2`.
 ```
-./main.py avatar.png --output_format 1
+pyascii avatar.png --output_format 1
 ```
 
-You can use `--line_height` to specify the height of each line of ascii characters in the output file. The default value is `0.70`.
+You can use `--line_height` to specify the height of each line of ascii characters in the output file. The default value is `0.65`.
 ```
-./main.py avatar.png --line_height 0.65
+pyascii avatar.png --line_height 0.65
 ```
 
 You can use `--font_size` to specify the font size of ascii characters in the output file. The default value is `5`.
 ```
-./main.py avatar.png --font_size 8
+pyascii avatar.png --font_size 8
 ```

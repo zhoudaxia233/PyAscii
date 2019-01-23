@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyascii/AsciiArt.py
+pyascii/__init__.py
+pyascii/_version.py
+pyascii/main.py
+pyascii.egg-info/PKG-INFO
+pyascii.egg-info/SOURCES.txt
+pyascii.egg-info/dependency_links.txt
+pyascii.egg-info/entry_points.txt
+pyascii.egg-info/not-zip-safe
+pyascii.egg-info/requires.txt
+pyascii.egg-info/top_level.txt
