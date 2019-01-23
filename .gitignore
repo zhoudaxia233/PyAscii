@@ -4,3 +4,4 @@ Kara.txt
 kobbelt.jpg
 backup
 __pycache__
+*.egg-info
