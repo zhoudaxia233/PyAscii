@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # coding: utf-8
-from .AsciiArt import AsciiArt
 import argparse
+from .AsciiArt import AsciiArt
 
 
 def init():

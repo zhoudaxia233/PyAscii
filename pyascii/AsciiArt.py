@@ -11,9 +11,8 @@ class AsciiArt():
         unit = 256 / len(self.gray_scale)
         return self.gray_scale[int(pixel/unit)]
 
-    def convert_file(self, input_image_path, output_filename, conversion_format="txt",
-                     scaling_ratio=0.5,
-                     font_size=5, line_height=0.65):
+    def convert_file(self, input_image_path, output_filename, conversion_format,
+                     scaling_ratio, font_size=None, line_height=None):
         """Convert a image file to ASCII
 
         Arguments:
@@ -22,9 +21,9 @@ class AsciiArt():
         Keyword Arguments:
             output_filename {string} -- Output file path
             conversion_format {str} -- Output file format (default: {"txt"})
-            scaling_ratio {float} -- Image rescaling ratio (default: {0.5})
-            font_size {int} -- Font size for HTML styling (default: {5})
-            line_height {float} -- Line height for HTML styling (default: {0.65})
+            scaling_ratio {float} -- Image rescaling ratio
+            font_size {int} -- Font size for HTML styling
+            line_height {float} -- Line height for HTML styling
         """
         image = Image.open(input_image_path)
 
