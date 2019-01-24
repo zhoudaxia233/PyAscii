@@ -1,9 +1,9 @@
 # PyAscii
 
 ## Some Amazing examples
-[1. A Beautiful Girl drawed by me](http://zhoudaxia.eu/AsciiArt/examples/test1.html)  
-[2. Famous Yaoming's Face](http://zhoudaxia.eu/AsciiArt/examples/yaoming.html)  
-[3. My Avatar](http://zhoudaxia.eu/AsciiArt/examples/avatar.html)
+[1. A Beautiful Girl drawed by me](http://zhoudaxia.eu/PyAscii/examples/test1.html)  
+[2. Famous Yaoming's Face](http://zhoudaxia.eu/PyAscii/examples/yaoming.html)  
+[3. My Avatar](http://zhoudaxia.eu/PyAscii/examples/avatar.html)
 
 ---
 ## To do list
