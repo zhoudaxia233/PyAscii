@@ -8,15 +8,13 @@
 ---
 ## To do list
 - [x] Asciify an image into `txt` & `html`
-- [ ] Asciify many images parallelly
-- [ ] Asciify a GIF
 - [ ] Asciify a video
 - [ ] Asciify webcam feed
 
 ---
 ## Requirements
-1. `Python3.6`
-2. `Pillow-5.1.0` (Only this version has been tested, other versions may also work)
+1. `Python >= 3.6`
+2. `Pillow >= 5.1.0` (It will automatically be installed when you install `pyascii`)
 
 ---
 ## Installation
@@ -42,7 +40,7 @@ You can use `--output_format` or `-o` to specify the format of the output file.
 `1` represents for `.html` format  
 `2` represents for both `.txt` format & `.html` format
 
-The default value is `2`.
+The default value is `1`.
 ```
 pyascii avatar.png --output_format 1
 ```
