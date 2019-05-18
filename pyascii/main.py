@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # coding: utf-8
-from .AsciiArt import AsciiArt
 import argparse
+from .AsciiArt import AsciiArt
 
 
 def init():
@@ -19,14 +19,30 @@ def init():
 def main():
     img_path, scaling_ratio, output_format, font_size, line_height = init()
     filename = img_path.split('.')[0]
-    asciiart = AsciiArt(img_path)
+    asciiart = AsciiArt()
     if output_format == 0:
-        asciiart.save_as_txt_file(scaling_ratio, filename)
+        asciiart.convert_file(input_image_path=img_path,
+                              output_filename=filename,
+                              conversion_format="txt",
+                              scaling_ratio=scaling_ratio)
     elif output_format == 1:
-        asciiart.save_as_html_file(scaling_ratio, filename, font_size, line_height)
+        asciiart.convert_file(input_image_path=img_path,
+                              output_filename=filename,
+                              conversion_format="html",
+                              scaling_ratio=scaling_ratio,
+                              font_size=font_size,
+                              line_height=line_height)
     elif output_format == 2:
-        asciiart.save_as_txt_file(scaling_ratio, filename)
-        asciiart.save_as_html_file(scaling_ratio, filename, font_size, line_height)
+        asciiart.convert_file(input_image_path=img_path,
+                              output_filename=filename,
+                              conversion_format="txt",
+                              scaling_ratio=scaling_ratio)
+        asciiart.convert_file(input_image_path=img_path,
+                              output_filename=filename,
+                              conversion_format="html",
+                              scaling_ratio=scaling_ratio,
+                              font_size=font_size,
+                              line_height=line_height)
     else:
         raise ValueError('Possible values are 0, 1 and 2.')
 

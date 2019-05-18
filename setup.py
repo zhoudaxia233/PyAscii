@@ -24,7 +24,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=['Pillow>=5.1.0'],
-    python_requires='>=3.5',
+    python_requires='>=3.6',
     dependency_links=[],
     entry_points={
         'console_scripts': [

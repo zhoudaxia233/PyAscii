@@ -15,7 +15,7 @@
 
 ---
 ## Requirements
-1. `Python3`
+1. `Python3.6`
 2. `Pillow-5.1.0` (Only this version has been tested, other versions may also work)
 
 ---
