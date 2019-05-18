@@ -8,7 +8,7 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist')
     os.system('twine upload dist/*')
     # os.system('rm -rf dist pyascii.egg-info')  # for Linux
-    os.system('rm –path dist, pyascii.egg-info –recurse –force')  # for Windows
+    os.system('powershell rm –path dist, pyascii.egg-info –recurse –force')  # for Windows
     sys.exit()
 
 setup(
