@@ -32,8 +32,7 @@ class AsciiArt:
                     break
                 ascii_data = self.img_to_ascii(frame, scaling_ratio)
 
-                os_type = platform.system()
-                if os_type == 'Windows':
+                if platform.system() == 'Windows':
                     os.system('cls')
                 else:
                     os.system('clear')
@@ -92,7 +91,3 @@ class AsciiArt:
         html = html % (line_height, font_size, ascii_data)
         with open(f'{output_filename}.html', 'w') as f:
             f.write(html)
-
-
-if __name__ == '__main__':
-    AsciiArt().play_video('../bear.mp4', 0.1)

@@ -1,5 +1,6 @@
 import os
 import sys
+import platform
 import pyascii
 from setuptools import setup
 
@@ -7,8 +8,10 @@ from setuptools import setup
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist')
     os.system('twine upload dist/*')
-    # os.system('rm -rf dist pyascii.egg-info')  # for Linux
-    os.system('powershell rm –path dist, pyascii.egg-info –recurse –force')  # for Windows
+    if platform.system() == 'Windows':
+        os.system('powershell rm –path dist, pyascii.egg-info –recurse –force')
+    else:
+        os.system('rm -rf dist pyascii.egg-info')
     sys.exit()
 
 setup(
