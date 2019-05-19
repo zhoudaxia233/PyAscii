@@ -21,7 +21,7 @@ setup(
     packages=['pyascii'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['Pillow>=5.1.0'],
+    install_requires=['opencv-python>=4.0.0'],
     python_requires='>=3.6',
     dependency_links=[],
     entry_points={
