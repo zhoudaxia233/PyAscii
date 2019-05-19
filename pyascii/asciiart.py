@@ -6,13 +6,14 @@ import cv2
 
 
 class AsciiArt:
-    def __init__(self):
+    def __init__(self, filepath):
+        self.filepath = filepath
         self.gray_scale = r'@%#*+=-:. '
         self.num_of_color_levels = len(self.gray_scale)
 
-    def convert(self, filepath, target_format, scaling_ratio, font_size=None, line_height=None):
-        image = cv2.imread(filepath)
-        filename = filepath.split('.')[0]
+    def convert(self, target_format, scaling_ratio, font_size=None, line_height=None):
+        image = cv2.imread(self.filepath)
+        filename = self.filepath.split('.')[0]
 
         ascii_data = self.img_to_ascii(image, scaling_ratio)
 
@@ -23,8 +24,8 @@ class AsciiArt:
         else:
             print(f'{target_format} is not supported.')
 
-    def play_video(self, filepath, scaling_ratio):
-        cap = cv2.VideoCapture(filepath)
+    def play_video(self, scaling_ratio):
+        cap = cv2.VideoCapture(self.filepath)
         try:
             while True:
                 get_frame, frame = cap.read()

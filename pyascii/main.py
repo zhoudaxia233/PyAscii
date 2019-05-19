@@ -25,25 +25,19 @@ def is_image(filepath):
 
 def main():
     filepath, scaling_ratio, output_format, font_size, line_height = init()
-    asciiart = AsciiArt()
+    asciiart = AsciiArt(filepath)
 
     if is_image(filepath):
         if output_format == 0:
-            asciiart.convert(filepath=filepath,
-                             target_format="txt",
-                             scaling_ratio=scaling_ratio)
+            asciiart.convert(target_format="txt", scaling_ratio=scaling_ratio)
         elif output_format == 1:
-            asciiart.convert(filepath=filepath,
-                             target_format="html",
+            asciiart.convert(target_format="html",
                              scaling_ratio=scaling_ratio,
                              font_size=font_size,
                              line_height=line_height)
         elif output_format == 2:
-            asciiart.convert(filepath=filepath,
-                             target_format="txt",
-                             scaling_ratio=scaling_ratio)
-            asciiart.convert(filepath=filepath,
-                             target_format="html",
+            asciiart.convert(target_format="txt", scaling_ratio=scaling_ratio)
+            asciiart.convert(target_format="html",
                              scaling_ratio=scaling_ratio,
                              font_size=font_size,
                              line_height=line_height)
@@ -51,4 +45,4 @@ def main():
             raise ValueError('Possible values are 0, 1 and 2.')
 
     else:
-        asciiart.play_video(filepath, scaling_ratio)
+        asciiart.play_video(scaling_ratio)
