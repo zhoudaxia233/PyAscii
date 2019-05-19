@@ -9,7 +9,7 @@
 ## To do list
 - [x] Asciify an image into `txt` & `html`
 - [x] Asciify a video
-- [x] Improve ascii video quality (by thresholding???)
+- [ ] Improve ascii video quality (by thresholding???)
 - [ ] Asciify webcam feed
 
 ---
