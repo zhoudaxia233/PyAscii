@@ -6,7 +6,7 @@ import cv2
 
 
 class AsciiArt:
-    def __init__(self, filepath):
+    def __init__(self, filepath=None):
         self.filepath = filepath
         self.gray_scale = r'@%#*+=-:. '
         self.num_of_color_levels = len(self.gray_scale)
@@ -39,7 +39,25 @@ class AsciiArt:
                     os.system('clear')
 
                 print(ascii_data)
-                time.sleep(0.02)
+                time.sleep(0.01)
+        except KeyboardInterrupt:
+            pass
+
+    def show_webcam(self, scaling_ratio):
+        cap = cv2.VideoCapture(0)
+        try:
+            while True:
+                _, frame = cap.read()
+                frame = cv2.flip(frame, 1)  # mirror
+                ascii_data = self.img_to_ascii(frame, scaling_ratio)
+
+                if platform.system() == 'Windows':
+                    os.system('cls')
+                else:
+                    os.system('clear')
+
+                print(ascii_data)
+                time.sleep(0.01)
         except KeyboardInterrupt:
             pass
 

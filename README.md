@@ -10,7 +10,7 @@
 - [x] Asciify an image into `txt` & `html`
 - [x] Asciify a video
 - [ ] Improve ascii video quality (by thresholding???)
-- [ ] Asciify webcam feed
+- [x] Asciify webcam feed
 
 ---
 ## Requirements
@@ -28,7 +28,7 @@ pip install pyascii
 ---
 
 ## Usage
-##### 1. Asciify an image
+#### 1. Asciify an image
 ```bash
 pyascii avatar.png
 ```
@@ -59,11 +59,20 @@ You can use `-fs` or `--font_size` to specify the font size of ascii characters 
 pyascii avatar.png -fs 8
 ```
 
-##### 2. Asciify a video
+#### 2. Asciify a video
 ```bash
 pyascii demo.mp4
 ```
-You can use `-s` or `--scaling_ratio` to specify the scaling ratio of the output with respect to the input image. The default value is `0.5`.  
+You can use `-s` or `--scaling_ratio` to specify the scaling ratio of the output with respect to the input. The default value is `0.5`.  
 ```bash
 pyascii demo.mp4 -s 0.1
+```
+
+#### 3. Asciify your webcam feed
+```bash
+pyascii webcam
+```
+You can use `-s` or `--scaling_ratio` to specify the scaling ratio of the output with respect to the input. The default value is `0.5`.  
+```bash
+pyascii webcam -s 0.1
 ```
